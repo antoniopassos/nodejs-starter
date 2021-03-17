@@ -4,12 +4,20 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "jasmine"
+        "test": "karma start --single-run",
+        "test-dev": "karma start",
+        "test-jasmine": "jasmine"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "jasmine": "^3.6.4"
+        "browserify": "^17.0.0",
+        "jasmine": "^3.6.4",
+        "karma": "^6.2.0",
+        "karma-browserify": "^8.0.0",
+        "karma-firefox-launcher": "^2.1.0",
+        "karma-jasmine": "^4.0.1",
+        "watchify": "^4.0.0"
     }
 }
